@@ -3,6 +3,12 @@
 image black:
     "#000"
 
+image red:
+    "#ff0000"
+
+image blue:
+    "#0004ae"
+
 image danger:
     "images/danger.png"
 
@@ -42,16 +48,31 @@ image klubot:
 
 image klubot loading:
     "images/klubot_loading0.png"
-    pause 1.5
+    pause 1.0
     "images/klubot_loading1.png"
-    pause 1.5
+    pause 1.0
     "images/klubot_loading2.png"
-    pause 1.5
+    pause 1.0
     "images/klubot_loading3.png"
-    pause 1.5
+    pause 1.0
     repeat
 
+image klubot calc:
+    "images/klubot_calc0.png"
+    pause 0.2
+    "images/klubot_calc1.png"
+    pause 0.2
+    repeat
+
+image klubot sad:
+    "images/klubot_sad"
+
 # Textual Assets
+define k = Character("KLUB07", color = "#ff0000", what_font="fonts/league_orbitron/Orbitron Medium.otf")
+define w = Character("Mecha Wahoo", color = "#ff0000", what_font="fonts/league_orbitron/Orbitron Medium.otf")
+define c = Character("Coach Tito", color = "#ff0000") #Terry Francona
+define f = Character("Flo", color = "#0004ae")
+define t = Character("TIGER Goon", color = "#008066")
 
 # Initiate pregame settings
 init python:
@@ -77,9 +98,49 @@ label start:
     with Pause(2)
     show text "Can you help them strike out some alien baddies?" with fade
     with Pause(2)
+    show text "Chapter 1: Indians Assemble" with fade
+    with Pause(2)
     hide text
-    show klubot loading
-    "ayy lmao"
+    k "ayy lmao"
+    show klubot calc at right with moveinright
+    k "ayy lmao"
+
+    show text "Chapter 1: Indians Assemble" with fade
+    with Pause(2)
+    hide text
+
+    show text "Chapter 2: Stealing Third Bass" with fade
+    with Pause(2)
+    hide text
+
+    show text "Chapter 1: Indians Assemble" with fade
+    with Pause(2)
+    hide text
+
+    show text "Chapter 3: Cyahoga Catastrophy" with fade
+    with Pause(2)
+    hide text
+
+    show text "Chapter 4: Indians IPA" with fade
+    with Pause(2)
+    hide text
+
+    show text "Chapter 5: Mysterious Handsom Batter" with fade
+    with Pause(2)
+    hide text
+
+    show text "Chapter 6: Three Reich's You're Out!" with fade
+    with Pause(2)
+    hide text
+
+    show text "Chapter 7: Christmas in Cleveland" with fade
+    with Pause(2)
+    hide text
+
+    show text "Chapter 8: Sweeping Detroit" with fade
+    with Pause(2)
+    hide text
+
     return
 
 # Pregame Splashscreen

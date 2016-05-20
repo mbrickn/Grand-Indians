@@ -280,3 +280,4 @@ init -1 python hide:
 
     #########################################
     ## More customizations can go here.
+    config.mouse = {'default' : [('images/wahoo.png', 0, 0)]}

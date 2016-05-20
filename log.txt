@@ -1,13 +1,13 @@
-Fri May 20 03:23:58 2016
+Fri May 20 04:24:14 2016
 Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
 Ren'Py 6.99.10.1227
  
 
 Bootstrap to the start of init.init took 0.13s
 Early init took 0.01s
-Loader init took 0.06s
+Loader init took 0.01s
 Loading error handling took 0.03s
-Loading script took 0.12s
+Loading script took 0.17s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.07s
@@ -19,15 +19,15 @@ Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.05s
+Creating interface object took 0.04s
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.04s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.07s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
@@ -269,20 +269,20 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.02974200249s
+Total time until interface ready: 0.932698965073s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.025766 seconds.
+- Frame drawn at 0.026486 seconds.
 
 primary display bounds: (0, 0, 3360, 1080)
 Fullscreen mode.
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-- Frame drawn at 0.052288 seconds.
-- Frame drawn at 0.068898 seconds.
-- Frame drawn at 0.084251 seconds.
-- 0.084251 seconds to render 5 frames.
+- Frame drawn at 0.051265 seconds.
+- Frame drawn at 0.067553 seconds.
+- Frame drawn at 0.083075 seconds.
+- 0.083075 seconds to render 5 frames.
 Cleaning stores took 0.00s
-Init translation took 0.12s
+Init translation took 0.11s
 Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s

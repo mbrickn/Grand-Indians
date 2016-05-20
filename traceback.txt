@@ -1,18 +1,14 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 59, in script
+While loading <'Image' 'images/klubot_calc0.png'>:
+  File "game/script.rpy", line 92, in script
     "ayy lmao"
-  File "game/screens.rpy", line 13, in prepare_screen
-    screen say(who, what, side_image=None, two_window=False):
-  File "game/screens.rpy", line 13, in prepare
-    screen say(who, what, side_image=None, two_window=False):
-Exception: A screen named quick_menu does not exist.
+IOError: Couldn't find file 'images/klubot_calc0.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 59, in script
+  File "game/script.rpy", line 92, in script
     "ayy lmao"
   File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 604, in execute
     renpy.exports.say(who, what, interact=self.interact)
@@ -22,23 +18,59 @@ Full traceback:
     self.do_display(who, what, cb_args=self.cb_args, **display_args)
   File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 690, in do_display
     **display_args)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 467, in display_say
-    what_text = show_function(who, what_string)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 674, in do_show
-    **self.show_args)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 275, in show_display_say
-    return renpy.display.screen.get_widget(screen, "what", layer)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/screen.py", line 1137, in get_widget
-    screen.update()
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/screen.py", line 565, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 13, in prepare_screen
-    screen say(who, what, side_image=None, two_window=False):
-  File "game/screens.rpy", line 13, in prepare
-    screen say(who, what, side_image=None, two_window=False):
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/sl2/slast.py", line 1540, in prepare
-    raise Exception("A screen named {} does not exist.".format(self.target))
-Exception: A screen named quick_menu does not exist.
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 493, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ui.py", line 277, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/core.py", line 2425, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/core.py", line 2779, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/core.py", line 1848, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 416, in renpy.display.render.render_screen (gen/renpy.display.render.c:6685)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/layout.py", line 649, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/layout.py", line 649, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/layout.py", line 649, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/image.py", line 261, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/image.py", line 124, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3319)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "renpy/display/accelerator.pyx", line 104, in renpy.display.accelerator.transform_render (gen/renpy.display.accelerator.c:1965)
+    cr = render(child, widtho, heighto, st - self.child_st_base, at)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2857)
+    rv = d.render(widtho, heighto, st, at)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/im.py", line 478, in render
+    im = cache.get(self)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/im.py", line 200, in get
+    surf = image.load()
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/im.py", line 529, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/loader.py", line 533, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'images/klubot_calc0.png'.
 
 Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
 Ren'Py 6.99.10.1227
