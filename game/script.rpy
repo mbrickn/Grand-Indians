@@ -9,6 +9,9 @@ image red:
 image blue:
     "#0004ae"
 
+image team:
+    "images/team.png"
+
 image danger:
     "images/danger.png"
 
@@ -46,6 +49,15 @@ image flo:
 image klubot:
     "images/klubot.png"
 
+image klubot glitch:
+    "images/klubot_glitch.png"
+
+image klubot surprise:
+    "images/klubot_surprise.png"
+
+image klubot sad:
+    "images/klubot_sad"
+
 image klubot loading:
     "images/klubot_loading0.png"
     pause 1.0
@@ -64,8 +76,28 @@ image klubot calc:
     pause 0.2
     repeat
 
-image klubot sad:
-    "images/klubot_sad"
+image francona:
+    "images/francona0.png"
+    pause 0.8
+    "images/francona1.png"
+    pause 0.8
+    repeat
+
+image francona wheelie:
+    "images/francona_wheelie.png"
+
+image francona mecha:
+    "images/francona_mecha0.png"
+    pause 0.8
+    "images/francona_mecha1.png"
+    pause 0.8
+    repeat
+
+image tiger happy:
+    "images/tiger_happy.png"
+
+image tiger sad:
+    "images/tiger_sad.png"
 
 # Textual Assets
 define k = Character("KLUB07", color = "#ff0000", what_font="fonts/league_orbitron/Orbitron Medium.otf")
@@ -101,9 +133,9 @@ label start:
     show text "Chapter 1: Indians Assemble" with fade
     with Pause(2)
     hide text
-    k "ayy lmao"
-    show klubot calc at right with moveinright
-    k "ayy lmao"
+    c "Welcome recruit!"
+    show francona at left with moveinright
+    c "As you're aware"
 
     show text "Chapter 1: Indians Assemble" with fade
     with Pause(2)
@@ -112,6 +144,15 @@ label start:
     show text "Chapter 2: Stealing Third Bass" with fade
     with Pause(2)
     hide text
+    scene black
+    stop music
+    show text "An nonspecific orchestra in Cleveland - Midnight." with fade
+    hide text
+    with Pause(2)
+    show bass with moveinleft
+    hide bass with moveoutright
+    "???: Hehehe! I've stollen the bases and now I'm stealing the bass'es!"
+    with Pause(2)
 
     show text "Chapter 1: Indians Assemble" with fade
     with Pause(2)

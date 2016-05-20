@@ -1,4 +1,4 @@
-Fri May 20 04:24:14 2016
+Fri May 20 05:52:17 2016
 Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
 Ren'Py 6.99.10.1227
  
@@ -6,16 +6,16 @@ Ren'Py 6.99.10.1227
 Bootstrap to the start of init.init took 0.13s
 Early init took 0.01s
 Loader init took 0.01s
-Loading error handling took 0.03s
-Loading script took 0.17s
+Loading error handling took 0.02s
+Loading script took 0.18s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.07s
 Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to '/home/hackathon/.renpy/backups/MechaWahoo':
-Dump and make backups. took 0.07s
+Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
@@ -26,7 +26,7 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.04s
-Prepare screens took 0.06s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
@@ -269,20 +269,20 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.932698965073s
+Total time until interface ready: 0.939698934555s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.026486 seconds.
+- Frame drawn at 0.023452 seconds.
 
 primary display bounds: (0, 0, 3360, 1080)
 Fullscreen mode.
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-- Frame drawn at 0.051265 seconds.
-- Frame drawn at 0.067553 seconds.
-- Frame drawn at 0.083075 seconds.
-- 0.083075 seconds to render 5 frames.
+- Frame drawn at 0.052458 seconds.
+- Frame drawn at 0.069043 seconds.
+- Frame drawn at 0.082792 seconds.
+- 0.082792 seconds to render 5 frames.
 Cleaning stores took 0.00s
-Init translation took 0.11s
+Init translation took 0.10s
 Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s
