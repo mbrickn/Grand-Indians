@@ -1,0 +1,45 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 59, in script
+    "ayy lmao"
+  File "game/screens.rpy", line 13, in prepare_screen
+    screen say(who, what, side_image=None, two_window=False):
+  File "game/screens.rpy", line 13, in prepare
+    screen say(who, what, side_image=None, two_window=False):
+Exception: A screen named quick_menu does not exist.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 59, in script
+    "ayy lmao"
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 604, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/exports.py", line 1122, in say
+    who(what, interact=interact)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 841, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 690, in do_display
+    **display_args)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 467, in display_say
+    what_text = show_function(who, what_string)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 674, in do_show
+    **self.show_args)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/character.py", line 275, in show_display_say
+    return renpy.display.screen.get_widget(screen, "what", layer)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/screen.py", line 1137, in get_widget
+    screen.update()
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/screen.py", line 565, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 13, in prepare_screen
+    screen say(who, what, side_image=None, two_window=False):
+  File "game/screens.rpy", line 13, in prepare
+    screen say(who, what, side_image=None, two_window=False):
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/sl2/slast.py", line 1540, in prepare
+    raise Exception("A screen named {} does not exist.".format(self.target))
+Exception: A screen named quick_menu does not exist.
+
+Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
+Ren'Py 6.99.10.1227
+MechaWahoo 0.0
