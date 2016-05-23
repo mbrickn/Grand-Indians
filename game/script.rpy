@@ -4,10 +4,10 @@ image black:
     "#000"
 
 image red:
-    "#ff0000"
+    "#2f191b"
 
 image blue:
-    "#0004ae"
+    "#091336"
 
 image team:
     "images/team.png"
@@ -49,6 +49,9 @@ image flo:
 image klubot:
     "images/klubot.png"
 
+image klubot head:
+    "images/klubot_head.png"
+
 image klubot glitch:
     "images/klubot_glitch.png"
 
@@ -76,22 +79,28 @@ image klubot calc:
     pause 0.2
     repeat
 
-image francona:
-    "images/francona0.png"
+image coach:
+    "images/coach0.png"
     pause 0.8
-    "images/francona1.png"
+    "images/coach0.png"
     pause 0.8
     repeat
 
-image francona wheelie:
-    "images/francona_wheelie.png"
+image coach wheelie:
+    "images/coach_wheelie.png"
 
-image francona mecha:
-    "images/francona_mecha0.png"
+image coach mecha:
+    "images/coach_mecha0.png"
     pause 0.8
-    "images/francona_mecha1.png"
+    "images/coach_mecha1.png"
     pause 0.8
     repeat
+
+image tiger robot:
+    "images/tiger_robot.png"
+
+image tiger dead:
+    "images/tiger_robot_dead.png"
 
 image tiger happy:
     "images/tiger_happy.png"
@@ -99,12 +108,16 @@ image tiger happy:
 image tiger sad:
     "images/tiger_sad.png"
 
+image hitler:
+    "images/hitler.png"
+
 # Textual Assets
 define k = Character("KLUB07", color = "#ff0000", what_font="fonts/league_orbitron/Orbitron Medium.otf")
 define w = Character("Mecha Wahoo", color = "#ff0000", what_font="fonts/league_orbitron/Orbitron Medium.otf")
-define c = Character("Coach Tito", color = "#ff0000") #Terry Francona
+define c = Character("Coach Tito", color = "#ff0000")
 define f = Character("Flo", color = "#0004ae")
 define t = Character("TIGER Goon", color = "#008066")
+define tr = Character("TIGER Robot", color = "#008066")
 
 # Initiate pregame settings
 init python:
@@ -116,6 +129,11 @@ init python:
 label start:
     scene black
     stop music
+
+    show text "Chapter 1: Indians Assemble" with fade
+    with Pause(2)
+    hide text with dissolve
+
     show text "The year is 2016." with fade
     with Pause(2)
     show text "The alien invasion started in Detroit." with fade
@@ -130,16 +148,14 @@ label start:
     with Pause(2)
     show text "Can you help them strike out some alien baddies?" with fade
     with Pause(2)
-    show text "Chapter 1: Indians Assemble" with fade
-    with Pause(2)
-    hide text
-    c "Welcome recruit!"
-    show francona at left with moveinright
-    c "As you're aware"
+    hide text with dissolve
 
-    show text "Chapter 1: Indians Assemble" with fade
-    with Pause(2)
-    hide text
+    c "Welcome recruit!"
+    show coach with moveinright
+    c "As you're aware the T.I.G.E.R.s have been moving in on Progressive Field."
+    c "At our disposal is me, my men, Robot KLUB07 here, and only one of you."
+    c "You're a big guy so go get them, Tiger!"
+    hide coach with moveoutleft
 
     show text "Chapter 2: Stealing Third Bass" with fade
     with Pause(2)

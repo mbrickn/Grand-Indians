@@ -95,23 +95,23 @@ init -1 python hide:
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
 
-    # style.window.left_margin = 6
-    # style.window.right_margin = 6
-    # style.window.top_margin = 6
-    # style.window.bottom_margin = 6
+    style.window.left_margin = 300
+    style.window.right_margin = 300
+    style.window.top_margin = 300
+    style.window.bottom_margin = 6
 
     ## Padding is space inside the window, where the background is
     ## drawn.
 
-    # style.window.left_padding = 6
-    # style.window.right_padding = 6
-    # style.window.top_padding = 6
-    # style.window.bottom_padding = 6
+    style.window.left_padding = 30
+    style.window.right_padding = 30
+    style.window.top_padding = 30
+    style.window.bottom_padding = 30
 
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    # style.window.yminimum = 200
+    style.window.yminimum = 200
 
 
     #########################################
@@ -143,7 +143,11 @@ init -1 python hide:
 
     ## The default size of text.
 
-    style.default.size = 25
+    style.default.size = 32
+
+    ## The default kerning of the text. Removing will make the text illegible!
+
+    style.default.kerning = 1
 
     ## Note that these only change the size of some of the text. Other
     ## buttons have their own styles.
