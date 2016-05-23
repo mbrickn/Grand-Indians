@@ -1,20 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 223, in script
-    T "EVIL!"
-Exception: Sayer 'T' is not defined.
+  File "game/script.rpy", line 256, in script
+    show tiger at right with moveinleft
+Exception: Image 'tiger' not found.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 223, in script
-    T "EVIL!"
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 584, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 501, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'T' is not defined.
+  File "game/script.rpy", line 256, in script
+    show tiger at right with moveinleft
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 1065, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 1037, in show_imspec
+    atl=atl)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/exports.py", line 622, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/image.py", line 230, in find_target
+    error("Image '%s' not found." % ' '.join(self.name))
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/image.py", line 196, in error
+    raise Exception(msg)
+Exception: Image 'tiger' not found.
 
 Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
 Ren'Py 6.99.10.1227

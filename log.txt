@@ -1,4 +1,4 @@
-Mon May 23 16:56:18 2016
+Mon May 23 17:15:26 2016
 Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
 Ren'Py 6.99.10.1227
  
@@ -7,7 +7,7 @@ Bootstrap to the start of init.init took 0.13s
 Early init took 0.01s
 Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.20s
+Loading script took 0.21s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.07s
@@ -15,18 +15,18 @@ Loading analysis data took 0.01s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to '/home/hackathon/.renpy/backups/MechaWahoo':
-Dump and make backups. took 0.07s
+Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
 Creating interface object took 0.05s
 Cleaning stores took 0.00s
-Init translation took 0.00s
+Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.04s
-Prepare screens took 0.07s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
@@ -269,22 +269,29 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.971472978592s
+Total time until interface ready: 0.970002174377s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.025542 seconds.
+- Frame drawn at 0.026547 seconds.
 
 primary display bounds: (0, 0, 3360, 1080)
 Fullscreen mode.
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-- Frame drawn at 0.051268 seconds.
-- Frame drawn at 0.069465 seconds.
-- Frame drawn at 0.082989 seconds.
-- 0.082989 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.12s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+- Frame drawn at 0.050638 seconds.
+- Frame drawn at 0.066740 seconds.
+- Frame drawn at 0.083407 seconds.
+- 0.083407 seconds to render 5 frames.
+Traceback (most recent call last):
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/execution.py", line 408, in run
+    node.execute()
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 1065, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 1037, in show_imspec
+    atl=atl)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/exports.py", line 622, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/image.py", line 230, in find_target
+    error("Image '%s' not found." % ' '.join(self.name))
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/display/image.py", line 196, in error
+    raise Exception(msg)
+Exception: Image 'tiger' not found.

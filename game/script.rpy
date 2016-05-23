@@ -117,7 +117,11 @@ define w = Character("Mecha Wahoo", color = "#ff0000", what_font="fonts/league_o
 define c = Character("Coach", color = "#ff0000")
 define p = Character("Player", color = "#ff0000")
 define f = Character("Flo", color = "#0004ae")
+define q = Character("?", color = "#008066")
 define t = Character("TIGER Goon", color = "#008066")
+define ts = Character("TIGER Goons", color = "#008066")
+define t1 = Character("TIGER Bro #1", color = "#008066")
+define t2 = Character("TIGER Bro #2", color = "#008066")
 define tr = Character("TIGER Robot", color = "#008066")
 
 
@@ -171,8 +175,8 @@ label start:
     hide text
     with Pause(2)
     hide bass with moveoutleft
-    "???: Hehehe! I've stollen the bases and now I'm stealing the bass'es!"
-    "???: With this Europe will surely fall to us using the magical bass powers!"
+    q "Hehehe! I've stollen the bases and now I'm stealing the bass'es!"
+    q "With this Europe will surely fall to us using the power of this magical bass!"
     scene blue with dissolve
     show coach at right with moveinright
     c "Recruit!"
@@ -216,8 +220,8 @@ label start:
             c "{i}Oh yes!{/i}"
             hide tiger sad with vpunch
         "Romance him!":
-            p "T.I.G.E.R. senpai I..."
-            p "I love you."
+            p "T.I.G.E.R. senpai I...{nw}"
+            p "T.I.G.E.R. senpai I love you."
             t "SHUCKS!"
             t "I LOVE YOU TOO!"
             t "BUT I HAVE A GREATER LOVE!"
@@ -228,14 +232,40 @@ label start:
             show tiger sad at left
             t "OH NO! YOU RUSED ME!"
             c "{i}Oh yes!{/i}"
+            t "I AM NOT STRONG ENOUGH TO DESTROY YOUR MECHA BIKE"
             hide tiger sad with vpunch
     c "Let's steal the bass back and get out of here!"
-
     scene black with dissolve
+    show text "Thirty minutes later..." with dissolve
+    with Pause(2)
+    hide text with dissolve
+    scene cleveland with dissolve
+    show coach with moveinright
+    c "Looks like we swept them!"
+    menu:
+        "What do you think?"
+        "Yes":
+            c "Team! Get in the robot! I've got a bad feeling about this!"
+        "No":
+            c "Team! Get in the robot! I've got a bad feeling about this!"
+
+    scene cleveland with dissolve
     show text "Chapter 3: Cuyahoga Catastrophy" with dissolve
     with Pause(2)
     hide text
-
+    "The City of Cleveland, home of the Cleveland Indians!"
+    show cleveland fire
+    "Oh no!"
+    show tiger happy at right with moveinleft
+    show tiger happy at left with moveinright
+    ts "OH YES!"
+    t1 "YO BRO WE LIT THE CUYAHOGA ON FIRE {i}AGAIN{/i}!"
+    t2 "HOW'S IT FEEL BRO?"
+    t1 "FEEL'S GOOD!"
+    t2 "THAT'S GOOD!"
+    t1 "THAT'S EVIL!"
+    t2 "FEEL'S EVIL!"
+    ts "BRO!"
     scene black with dissolve
     show text "Chapter 4: Indians IPA" with dissolve
     with Pause(2)
