@@ -9,8 +9,8 @@ image red:
 image blue:
     "#091336"
 
-image team:
-    "images/team.png"
+image logo:
+    "images/logo.png"
 
 image danger:
     "images/danger.png"
@@ -295,3 +295,15 @@ label start:
 
 # Pregame Splashscreen
 label splashscreen:
+    "This game contains flashing imagery."
+    "Stay safe! If you have conditions such as epilepsy do not play this game!"
+    "If you aren't sure you are safe playing such a game but somehow must play this game..."
+    "Please disable the animations before you play the game."
+    "You know what game doesn't have flashing imagery?"
+    "A Cleveland Indians game at Progressive Stadium!"
+    "Are you blind and having a friend read this for you?"
+    "Press your V key to enable speech synthesis! (Avalible on select Operating Systems)"
+    "That said have fun!"
+    show logo with dissolve
+    "Signed - The Developers"
+
