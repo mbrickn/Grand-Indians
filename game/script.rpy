@@ -127,29 +127,30 @@ init python:
 
 # The game starts here.
 label start:
-    scene black
+    scene cleveland
     stop music
 
-    show text "Chapter 1: Indians Assemble" with fade
+    show text "Chapter 1: Indians Assemble" with dissolve
     with Pause(2)
     hide text with dissolve
 
-    show text "The year is 2016." with fade
+    show text "The year is 2016." with dissolve
     with Pause(2)
-    show text "The alien invasion started in Detroit." with fade
+    show text "The alien invasion started in Detroit." with dissolve
+    with Pause(4)
+    show text "Spreading quickly across the world all cities fell." with dissolve
+    with Pause(4)
+    show text "Except Cleveland Ohio." with dissolve
     with Pause(2)
-    show text "Spreading quickly across the world all cities fell." with fade
-    with Pause(2)
-    show text "Except Cleveland Ohio." with fade
-    with Pause(2)
-    show text "Knowing of the treachery of alien T.I.G.E.R. spies present in Detroit." with fade
-    with Pause(2)
-    show text "The CLEVELAND INDIANS had long served as an anti-alien defence force." with fade
-    with Pause(2)
-    show text "Can you help them strike out some alien baddies?" with fade
-    with Pause(2)
+    show text "Knowing of the treachery of alien T.I.G.E.R. spies present in Detroit." with dissolve
+    with Pause(4)
+    show text "The CLEVELAND INDIANS had long served as an anti-alien defence force." with dissolve
+    with Pause(4)
+    show text "Can you help them strike out some alien baddies?" with dissolve
+    with Pause(4)
     hide text with dissolve
 
+    scene blue with dissolve
     c "Welcome recruit!"
     show coach with moveinright
     c "As you're aware the T.I.G.E.R.s have been moving in on Progressive Field."
@@ -157,12 +158,13 @@ label start:
     c "You're a big guy so go get them, Tiger!"
     hide coach with moveoutleft
 
-    show text "Chapter 2: Stealing Third Bass" with fade
+    show text "Chapter 2: Stealing Third Bass" with dissolve
     with Pause(2)
     hide text
     scene black
     stop music
-    show text "An nonspecific orchestra in Cleveland - Midnight." with fade
+    show text "An nonspecific orchestra in Cleveland - Midnight." with dissolve
+    with Pause(2)
     hide text
     with Pause(2)
     show bass with moveinleft
@@ -170,31 +172,27 @@ label start:
     "???: Hehehe! I've stollen the bases and now I'm stealing the bass'es!"
     with Pause(2)
 
-    show text "Chapter 1: Indians Assemble" with fade
+    show text "Chapter 3: Cuyahoga Catastrophy" with dissolve
     with Pause(2)
     hide text
 
-    show text "Chapter 3: Cyahoga Catastrophy" with fade
+    show text "Chapter 4: Indians IPA" with dissolve
     with Pause(2)
     hide text
 
-    show text "Chapter 4: Indians IPA" with fade
+    show text "Chapter 5: Mysterious Handsom Batter" with dissolve
     with Pause(2)
     hide text
 
-    show text "Chapter 5: Mysterious Handsom Batter" with fade
+    show text "Chapter 6: Three Reich's You're Out!" with dissolve
     with Pause(2)
     hide text
 
-    show text "Chapter 6: Three Reich's You're Out!" with fade
+    show text "Chapter 7: Christmas in Cleveland" with dissolve
     with Pause(2)
     hide text
 
-    show text "Chapter 7: Christmas in Cleveland" with fade
-    with Pause(2)
-    hide text
-
-    show text "Chapter 8: Sweeping Detroit" with fade
+    show text "Chapter 8: Sweeping Detroit" with dissolve
     with Pause(2)
     hide text
 
