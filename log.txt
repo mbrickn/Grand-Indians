@@ -1,4 +1,4 @@
-Mon May 23 16:10:55 2016
+Mon May 23 16:56:18 2016
 Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
 Ren'Py 6.99.10.1227
  
@@ -6,8 +6,8 @@ Ren'Py 6.99.10.1227
 Bootstrap to the start of init.init took 0.13s
 Early init took 0.01s
 Loader init took 0.01s
-Loading error handling took 0.03s
-Loading script took 0.17s
+Loading error handling took 0.02s
+Loading script took 0.20s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.07s
@@ -15,7 +15,7 @@ Loading analysis data took 0.01s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to '/home/hackathon/.renpy/backups/MechaWahoo':
-Dump and make backups. took 0.06s
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
@@ -26,7 +26,7 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.04s
-Prepare screens took 0.04s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
@@ -269,15 +269,22 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.912485122681s
+Total time until interface ready: 0.971472978592s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.023067 seconds.
+- Frame drawn at 0.025542 seconds.
 
 primary display bounds: (0, 0, 3360, 1080)
 Fullscreen mode.
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-- Frame drawn at 0.049045 seconds.
-- Frame drawn at 0.065178 seconds.
-- Frame drawn at 0.082426 seconds.
-- 0.082426 seconds to render 5 frames.
+- Frame drawn at 0.051268 seconds.
+- Frame drawn at 0.069465 seconds.
+- Frame drawn at 0.082989 seconds.
+- 0.082989 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

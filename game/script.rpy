@@ -114,10 +114,12 @@ image hitler:
 # Textual Assets
 define k = Character("KLUB07", color = "#ff0000", what_font="fonts/league_orbitron/Orbitron Medium.otf")
 define w = Character("Mecha Wahoo", color = "#ff0000", what_font="fonts/league_orbitron/Orbitron Medium.otf")
-define c = Character("Coach Tito", color = "#ff0000")
+define c = Character("Coach", color = "#ff0000")
+define p = Character("Player", color = "#ff0000")
 define f = Character("Flo", color = "#0004ae")
 define t = Character("TIGER Goon", color = "#008066")
 define tr = Character("TIGER Robot", color = "#008066")
+
 
 # Initiate pregame settings
 init python:
@@ -159,6 +161,7 @@ label start:
     hide coach with moveoutleft
 
     show text "Chapter 2: Stealing Third Bass" with dissolve
+    show bass at right with dissolve
     with Pause(2)
     hide text
     scene black
@@ -167,31 +170,93 @@ label start:
     with Pause(2)
     hide text
     with Pause(2)
-    show bass with moveinleft
-    hide bass with moveoutright
+    hide bass with moveoutleft
     "???: Hehehe! I've stollen the bases and now I'm stealing the bass'es!"
+    "???: With this Europe will surely fall to us using the magical bass powers!"
+    scene blue with dissolve
+    show coach at right with moveinright
+    c "Recruit!"
+    c "We have a situation!"
+    c "A non-specfic orchestra located in Cleveland Ohio has lost their only bass."
+    c "The T.I.G.E.R. agents from Detroit are almost certainly behind this!"
+    c "This is an infiltration mission to the heart of Detroit city to recover the bass and our bases."
+    c "I need you to come with me and be stealthy as possible."
+    menu:
+        c "Are you a brave enough boy to go with me?"
+        "Heck yes!":
+            c "That's what I like to hear!"
+        "Heck no!":
+            c "Too bad, we are out of options."
+            c "If we do not recover this bass Europe will totally fall to the space aliens!"
+            c "Let's go!"
+    scene black with dissolve
+    show text "Thirty minutes later..." with dissolve
     with Pause(2)
+    hide text with dissolve
+    scene detroit with dissolve
+    show bass
+    show coach at right with moveinright
+    c "We're here!"
+    c "Look there it is!"
+    show tiger happy at left with moveinleft
+    t "HOW ARE YOU GENTLEMEN?"
+    c "Oh no! A T.I.G.E.R. agent!"
+    t "OH YES!"
+    t "ALL YOUR BASS ARE BELONG TO US."
+    c "I'm gonna take him out! Recruit you distract him!"
+    hide coach with moveoutleft
+    menu:
+        "How will you distract the T.I.G.E.R.?"
+        "Tell him a joke!":
+            p "What did the T.I.G.E.R. Agent say to the Indians Mecha?"
+            t "I DON'T KNOW?"
+            show coach mecha at right with moveinright
+            show tiger sad at left
+            t "OH NO! I DIDN'T KNOW!"
+            c "{i}Oh yes!{/i}"
+            hide tiger sad with vpunch
+        "Romance him!":
+            p "T.I.G.E.R. senpai I..."
+            p "I love you."
+            t "SHUCKS!"
+            t "I LOVE YOU TOO!"
+            t "BUT I HAVE A GREATER LOVE!"
+            p "What's that?"
+            t "EVIL!"
+            p "{i}Good point!{/i}"
+            show coach mecha at right with moveinright
+            show tiger sad at left
+            t "OH NO! YOU RUSED ME!"
+            c "{i}Oh yes!{/i}"
+            hide tiger sad with vpunch
+    c "Let's steal the bass back and get out of here!"
 
+    scene black with dissolve
     show text "Chapter 3: Cuyahoga Catastrophy" with dissolve
     with Pause(2)
     hide text
 
+    scene black with dissolve
     show text "Chapter 4: Indians IPA" with dissolve
     with Pause(2)
     hide text
 
-    show text "Chapter 5: Mysterious Handsom Batter" with dissolve
+    scene black with dissolve
+    show text "Chapter 5: Mysterious Handsome Batter" with dissolve
     with Pause(2)
     hide text
 
+    scene black with dissolve
     show text "Chapter 6: Three Reich's You're Out!" with dissolve
     with Pause(2)
     hide text
 
+    scene black with dissolve
     show text "Chapter 7: Christmas in Cleveland" with dissolve
     with Pause(2)
     hide text
 
+    scene black with dissolve
     show text "Chapter 8: Sweeping Detroit" with dissolve
     with Pause(2)
     hide text
