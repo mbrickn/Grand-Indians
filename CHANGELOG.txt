@@ -1,0 +1,18 @@
+# Releases
+0.1 - Initial Version that debued at Tribe Hackathon 2016. one choice, no gameplay. 8 chapters.
+0.2 - Cleanup from rushed Hackathon version. two choices, no gameplay. 8 chapters.
+
+#FUTURE
+1.0 - This is the point at which the game is ready for a public release.
+    At this point builds will be posted for the public to download instead of source.
+    Need help determining weather or not this game is ready for a public release? See this list.
+    * Attian correct permissions to launch on non-devpost platforms.
+    * Characters should remain in character at all times. 
+    * Is the game sufficiently high quality?
+    * Have you preformed user experience tests?
+    * Is the Game free of unintentional typos and unintentional goofs?
+    * Are there any game breaking bugs?
+    * Can handicaped people adequately enjoy the game?
+    * Is the game actually fun yet or is it still a bunch of jokes?
+    
+    

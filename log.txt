@@ -1,4 +1,4 @@
-Mon May 23 20:42:00 2016
+Mon May 23 21:33:14 2016
 Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
 Ren'Py 6.99.10.1227
  
@@ -6,28 +6,28 @@ Ren'Py 6.99.10.1227
 Bootstrap to the start of init.init took 0.13s
 Early init took 0.01s
 Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.23s
-Loading persistent took 0.00s
+Loading error handling took 0.03s
+Loading script took 0.26s
+Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.07s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to '/home/hackathon/.renpy/backups/MechaWahoo':
-Dump and make backups. took 0.06s
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.04s
+Creating interface object took 0.05s
 Cleaning stores took 0.00s
-Init translation took 0.01s
+Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.04s
 Prepare screens took 0.07s
-Save pyanalysis. took 0.04s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
@@ -269,18 +269,18 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.05904221535s
+Total time until interface ready: 1.0459959507s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.024798 seconds.
+- Frame drawn at 0.025882 seconds.
 
 primary display bounds: (0, 0, 3360, 1080)
 Fullscreen mode.
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-- Frame drawn at 0.051848 seconds.
-- Frame drawn at 0.068777 seconds.
-- Frame drawn at 0.082567 seconds.
-- 0.082567 seconds to render 5 frames.
+- Frame drawn at 0.051396 seconds.
+- Frame drawn at 0.068542 seconds.
+- Frame drawn at 0.082902 seconds.
+- 0.082902 seconds to render 5 frames.
 Cleaning stores took 0.00s
 Init translation took 0.11s
 Build styles took 0.00s

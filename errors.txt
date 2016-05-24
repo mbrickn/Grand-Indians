@@ -2,8 +2,32 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 299: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        "If you aren't sure you are safe playing such a game but somehow must play this game.
+File "game/script.rpy", line 153: expected ':' not found.
+    label chapter 1:
+                  ^
+
+File "game/script.rpy", line 182: expected ':' not found.
+    label chapter 2:
+                  ^
+
+File "game/script.rpy", line 267: expected ':' not found.
+    label chapter 3:
+                  ^
+
+File "game/script.rpy", line 313: expected ':' not found.
+    label chapter 4:
+                  ^
+
+File "game/script.rpy", line 327: expected ':' not found.
+    label chapter 5:
+                  ^
+
+File "game/script.rpy", line 348: expected ':' not found.
+    label chapter 6:
+                  ^
+
+File "game/script.rpy", line 354: expected ':' not found.
+    label chapter 7:
+                  ^
 
 Ren'Py Version: Ren'Py 6.99.10.1227

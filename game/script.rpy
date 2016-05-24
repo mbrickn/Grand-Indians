@@ -79,6 +79,23 @@ image klubot calc:
     pause 0.2
     repeat
 
+image klubot pitch mode:
+    "images/klubot_loading0.png"
+    pause 1.0
+    "images/klubot_loading1.png"
+    pause 1.0
+    "images/klubot_loading2.png"
+    pause 1.0
+    "images/klubot_loading3.png"
+    pause 1.0
+    block
+        "images/klubot_calc0.png"
+        pause 0.2
+        "images/klubot_calc1.png"
+        pause 0.2
+        repeat
+
+
 image coach:
     "images/coach0.png"
     pause 0.8
@@ -150,6 +167,7 @@ label start:
     scene cleveland
     stop music
 
+label chapter1:
     show text "Chapter 1: Indians Assemble" with dissolve
     with Pause(2)
     hide text with dissolve
@@ -178,18 +196,18 @@ label start:
     c "You're a big guy so go get them, Tiger!"
     hide coach with moveoutleft
 
+label chapter2:
     show text "Chapter 2: Stealing Third Bass" with dissolve
-    show bass at right with dissolve
     with Pause(2)
     hide text
     scene black
+    show bass at right with dissolve
     stop music
     show text "An nonspecific orchestra in Cleveland - Midnight." with dissolve
+    hide text(2)
     with Pause(2)
-    hide text
-    with Pause(2)
-    hide bass with moveoutleft
-    q "Hehehe! I've stollen the bases and now I'm stealing the bass'es!"
+    hide bass with moveoutleft(2)
+    q "Hehehe! I've stolen the bases and now I'm stealing the bass'es!"
     q "With this Europe will surely fall to us using the power of this magical bass!"
     scene blue with dissolve
     show coach at right with moveinright
@@ -263,6 +281,7 @@ label start:
         "No":
             c "Team! Get in the robot! I've got a bad feeling about this!"
 
+label chapter3:
     scene cleveland with dissolve
     show text "Chapter 3: Cuyahoga Catastrophy" with dissolve
     with Pause(2)
@@ -283,9 +302,9 @@ label start:
     t1 "BRO!"
     t2 "BRO!"
     show coach wheelie with moveinright
-    c "Cut{nw}" with Pause(1)
-    c "That{nw}" with Pause(1)
-    c "Out{nw}" with Pause(1)
+    c "Cut{nw}" with Pause(1, hard=True)
+    c "That{nw}" with Pause(1, hard=True)
+    c "Out{nw}" with Pause(1, hard=True)
     show coach mecha
     t1 "BRO..."
     t2 "BRO?"
@@ -308,6 +327,7 @@ label start:
     c "Thanks for rebuilding Cleveland Flo!"
     f "No problem!"
 
+label chapter4:
     scene cleveland with dissolve
     show text "Chapter 4: Indians IPA" with dissolve
     with Pause(2)
@@ -318,29 +338,107 @@ label start:
 
     c "Man Cleveland has some good drinks."
     t "YOU SAID IT!"
-    t "ALMOST MAKES ME NOT WANT TO DESROY CLEVELAND!"
-    c "Yeah."
+    t "ALMOST MAKES ME {i}NOT{/i} WANT TO DESROY CLEVELAND!"
+    c "{i}Yeah.{/i}"
 
+label chapter5:
     scene red with dissolve
+    show tiger happy at left
+    show klubot at right
     show text "Chapter 5: Mysterious Handsome Batter" with dissolve
     with Pause(2)
     hide text
-
+    t "HEY KLUBOT."
+    t "I AM {i}NOT{/i} A T.I.G.E.R. SPACE ALIEN."
+    k "Is that so?"
+    t "I HEARD THAT YOU PITCH FOR THE CLEVELAND INDIANS"
+    show klubot sad at right
+    k "Fishiness Levels = 9999\%"
+    k "{i}Lie mode activate!{i}"
+    k "{i}No{/i}"
+    scene klubot head with fade
+    k "I was born in a lab in 1986."
+    k "Although the Regan Administration created me
+    k "to target Soviet millitary installations..."
+    k "I had a greater love..."
+    k "Baseball."
+    k "My targeting algorithms were made to aim missiles..."
+    k "But nothing can beat a well executed launching of a baseball."
+    k "It is thanks to baseball that I am able to experience emotion."
+    k "Joy."
+    k "Happiness."
+    k "Love."
+    t "YO! I HEARD YOU MONOLOGUING YOU LIAR!"
+    k "LOVE."
+    k "I LOVE BASEBALL!"
+    k "PITCH MODE ACTIVATE!"
+    scene red with fade
+    show tiger sad at left
+    show klubot pitch mode at right
+    k "{i}HEATING BASEBALL ANTI-AIRCRAT MINIGUN{/i}"
+    t "ARE YOU ACTUALLY GOING TO DO ANYTHING OR CAN I JUST GO LIGHT THE RIVER ON FIRE AGAIN?{nw}"
+    k "BEGONE T.I.G.E.R. SPACE ALIEN"
+    k "{i}Fire!{/i}" with pause(1)
+    t "{i}OH NO!{/i}{nw}"
+    hide tiger with hpunch
+    k "Oh {i}yes!{/i}"
+    k "Calculating current target position"
+    show klubot surprise at right
+    k "Target has been blasted to the moon orbit."
+    k "Calculated orbit period..."
+    k "1000 years"
+    show klubot at right
+    k "Pitch status: Success."
+    k "Emotion state: Excited."
+    
+label chapter6:
     scene black with dissolve
     show text "Chapter 6: Three Reich's You're Out!" with dissolve
     with Pause(2)
     hide text
 
+label chapter7:
     scene black with dissolve
     show text "Chapter 7: Christmas in Cleveland" with dissolve
     with Pause(2)
     hide text
+    show coach
 
+label chapter8:
     scene black with dissolve
     show text "Chapter 8: Sweeping Detroit" with dissolve
     with Pause(2)
     hide text
 
+label chapter9:
+    scene black with dissolve
+    show text "Epilogue!" with dissolve
+    with Pause(2)
+    hide text
+    show text "You win!" with moveinleft
+    with Pause(2)
+    hide text with moveoutright
+    show text "Special Thanks to..." with moveinleft
+    with Pause(2)
+    hide text with moveoutright
+    show text "The Cleveland Indians" with moveinleft
+    with Pause(2)
+    hide text with moveoutright
+    show text "Progressive Insurance" with moveinleft
+    with Pause(2)
+    hide text with moveoutright
+    show text "Tech Elevator" with moveinleft
+    with Pause(2)
+    hide text with moveoutright
+    show text "/u/RiverRatRambler" with moveinleft
+    with Pause(2)
+    hide text with moveoutright
+    show text "/u/Debadenedacro" with moveinleft
+    with Pause(2)
+    hide text with moveoutright
+    show text "/u/kgmoome" with moveinleft
+    with Pause(2)
+    hide text with moveoutright
     return
 
 # Pregame Splashscreen
