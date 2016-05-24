@@ -59,7 +59,7 @@ image klubot surprise:
     "images/klubot_surprise.png"
 
 image klubot sad:
-    "images/klubot_sad"
+    "images/klubot_sad.png"
 
 image klubot loading:
     "images/klubot_loading0.png"
@@ -88,7 +88,7 @@ image klubot pitch mode:
     pause 1.0
     "images/klubot_loading3.png"
     pause 1.0
-    block
+    block:
         "images/klubot_calc0.png"
         pause 0.2
         "images/klubot_calc1.png"
@@ -358,7 +358,7 @@ label chapter5:
     k "{i}No{/i}"
     scene klubot head with fade
     k "I was born in a lab in 1986."
-    k "Although the Regan Administration created me
+    k "Although the Regan Administration created me"
     k "to target Soviet millitary installations..."
     k "I had a greater love..."
     k "Baseball."
@@ -378,13 +378,13 @@ label chapter5:
     k "{i}HEATING BASEBALL ANTI-AIRCRAT MINIGUN{/i}"
     t "ARE YOU ACTUALLY GOING TO DO ANYTHING OR CAN I JUST GO LIGHT THE RIVER ON FIRE AGAIN?{nw}"
     k "BEGONE T.I.G.E.R. SPACE ALIEN"
-    k "{i}Fire!{/i}" with pause(1)
+    k "{i}Fire!{/i}" with Pause(1)
     t "{i}OH NO!{/i}{nw}"
     hide tiger with hpunch
     k "Oh {i}yes!{/i}"
     k "Calculating current target position"
     show klubot surprise at right
-    k "Target has been blasted to the moon orbit."
+    k "Target has been blasted to lunar orbit."
     k "Calculated orbit period..."
     k "1000 years"
     show klubot at right

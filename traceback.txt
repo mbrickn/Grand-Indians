@@ -1,20 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 338, in script
-    k "Fishiness Levels = 9999%"
-ValueError: incomplete format
+  File "game/script.rpy", line 381, in script
+    k "{i}Fire!{/i}" with pause(1)
+  File "game/script.rpy", line 381, in <module>
+    k "{i}Fire!{/i}" with pause(1)
+NameError: name 'pause' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 338, in script
-    k "Fishiness Levels = 9999%"
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 604, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/exports.py", line 1114, in say
-    what = what % tag_quoting_dict
-ValueError: incomplete format
+  File "game/script.rpy", line 381, in script
+    k "{i}Fire!{/i}" with pause(1)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 603, in execute
+    say_menu_with(self.with_, renpy.game.interface.set_transition)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 466, in say_menu_with
+    what = renpy.python.py_eval(expression)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/python.py", line 1606, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/python.py", line 1601, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 381, in <module>
+    k "{i}Fire!{/i}" with pause(1)
+NameError: name 'pause' is not defined
 
 Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
 Ren'Py 6.99.10.1227
