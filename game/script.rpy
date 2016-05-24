@@ -96,6 +96,13 @@ image coach mecha:
     pause 0.8
     repeat
 
+image wahoo fight:
+    "images/wahoo_pose0.png"
+    pause 0.8
+    "images/wahoo_pose1.png"
+    pause 0.8
+    repeat
+
 image tiger robot:
     "images/tiger_robot.png"
 
@@ -104,6 +111,12 @@ image tiger dead:
 
 image tiger happy:
     "images/tiger_happy.png"
+
+image able:
+    "images/tiger_b1.png"
+
+image cain:
+    "images/tiger_b2.png"
 
 image tiger sad:
     "images/tiger_sad.png"
@@ -117,13 +130,14 @@ define w = Character("Mecha Wahoo", color = "#ff0000", what_font="fonts/league_o
 define c = Character("Coach", color = "#ff0000")
 define p = Character("Player", color = "#ff0000")
 define f = Character("Flo", color = "#0004ae")
-define q = Character("?", color = "#008066")
+define i = Character("Cleveland Indians", color = "#ff0000")
+define tt = Character("The Tribe", color = "#ff0000")
+define q = Character("???", color = "#008066")
 define t = Character("TIGER Goon", color = "#008066")
 define ts = Character("TIGER Goons", color = "#008066")
 define t1 = Character("TIGER Bro #1", color = "#008066")
 define t2 = Character("TIGER Bro #2", color = "#008066")
 define tr = Character("TIGER Robot", color = "#008066")
-
 
 # Initiate pregame settings
 init python:
@@ -256,22 +270,58 @@ label start:
     "The City of Cleveland, home of the Cleveland Indians!"
     show cleveland fire
     "Oh no!"
-    show tiger happy at right with moveinleft
-    show tiger happy at left with moveinright
+    show able at right with moveinleft
+    show cain at left with moveinright
     ts "OH YES!"
-    t1 "YO BRO WE LIT THE CUYAHOGA ON FIRE {i}AGAIN{/i}!"
+    t1 "YO BRO WE LIT THE CUYAHOGA ON FIRE {i}AGAIN!{/i}"
+    t2 "NOW CLEVELANDERS WILL {i}HAVE{/i} TO MOVE TO DETROIT!"
     t2 "HOW'S IT FEEL BRO?"
     t1 "FEEL'S GOOD!"
     t2 "THAT'S GOOD!"
     t1 "THAT'S EVIL!"
     t2 "FEEL'S EVIL!"
-    ts "BRO!"
-    scene black with dissolve
+    t1 "BRO!"
+    t2 "BRO!"
+    show coach wheelie with moveinright
+    c "Cut{nw}" with Pause(1)
+    c "That{nw}" with Pause(1)
+    c "Out{nw}" with Pause(1)
+    show coach mecha
+    t1 "BRO..."
+    t2 "BRO?"
+    hide cain with vpunch
+    t2 "Bro!"
+    hide able with vpunch
+    c "I took them out, but the river is still on fire."
+    c "You can't fight fire with a mecha!"
+    i "Yes we can coach!"
+    i "Everyone get in the robot."
+    hide coach with moveoutleft
+    show wahoo fight with moveinright
+    i "Tomahawk strike!"
+    scene cleveland
+    show coach at right with moveinright
+    c "Great work team! The fire is gone!"
+    c "But how did the city get repaired after the fire?"
+    show flo at left with moveinleft
+    f "With the power of {a=https://www.progressive.com/homeowners/}Progressive Insurance{/a} of course!"
+    c "Thanks for rebuilding Cleveland Flo!"
+    f "No problem!"
+
+    scene cleveland with dissolve
     show text "Chapter 4: Indians IPA" with dissolve
     with Pause(2)
     hide text
 
-    scene black with dissolve
+    show coach at right with moveinright
+    show tiger happy at left with moveinleft
+
+    c "Man Cleveland has some good drinks."
+    t "YOU SAID IT!"
+    t "ALMOST MAKES ME NOT WANT TO DESROY CLEVELAND!"
+    c "Yeah."
+
+    scene red with dissolve
     show text "Chapter 5: Mysterious Handsome Batter" with dissolve
     with Pause(2)
     hide text
