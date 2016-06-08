@@ -4,15 +4,20 @@ The Goal of this game is to enhance the fan experience. You can do anything as l
 
 ##Writing
 
-Kids might play this game so no cussing or adult themes in script. If you can be clever and write arround it so that an adult would get but not a kid, that is not just ok, but encouraged.
+Kids might play this game so no swearing or explicit adult imagery is allowed in script. If you can be clever and write arround it so that an adult would get but not a kid, that is not just ok, but encouraged.
 
-We looked at what a few Tribes fans liked at the Hackathon and discovered a common interest in Anime. Please reference Anime and Japanese culture as much as you want to ensure their enjoyment.
+We looked at what a few Tribes fans liked at the Hackathon and discovered a common interest in Anime. 
+Thus please reference Anime and Japanese culture as much as you want to ensure their enjoyment.
 
-Use whatever fonts you like as long as it's for a reason. Fonts must have an open licence. Proprietary fonts will be *REJECTED* by maintainer.
+Use whatever fonts you like as long as it's for a reason. 
+Fonts must have an open licence. 
+Proprietary fonts will be *REJECTED* by maintainer.
 
 ##Graphics
 
-Almost all images should be .png's created from SVGs. Include the SVGs in the source folder so changes to resolution can be easily made in the future. If Ren'py ever gains support for SVG's just use those instead.
+Almost all images should be .png's created from SVGs. 
+Include the SVGs in the source folder so changes to resolution can be easily made in the future. 
+If Ren'py ever gains support for SVG's just use those instead.
 
 ##Audio
 
@@ -26,6 +31,12 @@ Acceptable Music Genres include but are not limited to
 * Chiptune
 * Disco
 * Polka
+
+## Translating
+
+If you would like to provide a translation that is great! You are great!
+It is important for fans to enjoy the game in their native language.
+Contact the developers with your proposal and we will probably include it.
 
 ##Technical
 
