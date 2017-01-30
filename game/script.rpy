@@ -190,11 +190,11 @@ label chapter1:
 
     scene blue with dissolve
     c "Welcome recruit!"
-    show coach with moveinright
+    show coach with easeinright
     c "As you're aware the T.I.G.E.R.s have been moving in on Progressive Field."
     c "At our disposal is me, my men, Robot KLUB07 here, and only one of you."
     c "You're a big guy so go get them, Tiger!"
-    hide coach with moveoutleft
+    hide coach with easeoutleft
 
 label chapter2:
     show text "Chapter 2: Stealing Third Bass" with dissolve
@@ -206,11 +206,11 @@ label chapter2:
     show text "An nonspecific orchestra in Cleveland - Midnight." with dissolve
     hide text(2)
     with Pause(2)
-    hide bass with moveoutleft(2)
+    hide bass with easeoutleft(2)
     q "Hehehe! I've stolen the bases and now I'm stealing the bass'es!"
     q "With this Europe will surely fall to us using the power of this magical bass!"
     scene blue with dissolve
-    show coach at right with moveinright
+    show coach at right with easeinright
     c "Recruit!"
     c "We have a situation!"
     c "A non-specfic orchestra located in Cleveland Ohio has lost their only bass."
@@ -231,22 +231,22 @@ label chapter2:
     hide text with dissolve
     scene detroit with dissolve
     show bass
-    show coach at right with moveinright
+    show coach at right with easeinright
     c "We're here!"
     c "Look there it is!"
-    show tiger happy at left with moveinleft
+    show tiger happy at left with easeinleft
     t "HOW ARE YOU GENTLEMEN?"
     c "Oh no! A T.I.G.E.R. agent!"
     t "OH YES!"
     t "ALL YOUR BASS ARE BELONG TO US."
     c "I'm gonna take him out! Recruit you distract him!"
-    hide coach with moveoutleft
+    hide coach with easeoutleft
     menu:
         "How will you distract the T.I.G.E.R.?"
         "Tell him a joke!":
             p "What did the T.I.G.E.R. Agent say to the Indians Mecha?"
             t "I DON'T KNOW?"
-            show coach mecha at right with moveinright
+            show coach mecha at right with easeinright
             show tiger sad at left
             t "OH NO! I DIDN'T KNOW!"
             c "{i}Oh yes!{/i}"
@@ -260,7 +260,7 @@ label chapter2:
             p "What's that?"
             t "EVIL!"
             p "{i}Good point!{/i}"
-            show coach mecha at right with moveinright
+            show coach mecha at right with easeinright
             show tiger sad at left
             t "OH NO! YOU RUSED ME!"
             c "{i}Oh yes!{/i}"
@@ -272,7 +272,7 @@ label chapter2:
     with Pause(2)
     hide text with dissolve
     scene cleveland with dissolve
-    show coach with moveinright
+    show coach with easeinright
     c "Looks like we swept them!"
     menu:
         "What do you think?"
@@ -289,8 +289,8 @@ label chapter3:
     "The City of Cleveland, home of the Cleveland Indians!"
     show cleveland fire
     "Oh no!"
-    show able at right with moveinleft
-    show cain at left with moveinright
+    show able at right with easeinleft
+    show cain at left with easeinright
     ts "OH YES!"
     t1 "YO BRO WE LIT THE CUYAHOGA ON FIRE {i}AGAIN!{/i}"
     t2 "NOW CLEVELANDERS WILL {i}HAVE{/i} TO MOVE TO DETROIT!"
@@ -301,7 +301,7 @@ label chapter3:
     t2 "FEEL'S EVIL!"
     t1 "BRO!"
     t2 "BRO!"
-    show coach wheelie with moveinright
+    show coach wheelie with easeinright
     c "Cut{nw}" with Pause(1, hard=True)
     c "That{nw}" with Pause(1, hard=True)
     c "Out{nw}" with Pause(1, hard=True)
@@ -315,14 +315,14 @@ label chapter3:
     c "You can't fight fire with a mecha!"
     i "Yes we can coach!"
     i "Everyone get in the robot."
-    hide coach with moveoutleft
-    show wahoo fight with moveinright
+    hide coach with easeoutleft
+    show wahoo fight with easeinright
     i "Tomahawk strike!"
     scene cleveland
-    show coach at right with moveinright
+    show coach at right with easeinright
     c "Great work team! The fire is gone!"
     c "But how did the city get repaired after the fire?"
-    show flo at left with moveinleft
+    show flo at left with easeinleft
     f "With the power of {a=https://www.progressive.com/homeowners/}Progressive Insurance{/a} of course!"
     c "Thanks for rebuilding Cleveland Flo!"
     f "No problem!"
@@ -333,8 +333,8 @@ label chapter4:
     with Pause(2)
     hide text
 
-    show coach at right with moveinright
-    show tiger happy at left with moveinleft
+    show coach at right with easeinright
+    show tiger happy at left with easeinleft
 
     c "Man Cleveland has some good drinks."
     t "YOU SAID IT!"
@@ -400,7 +400,7 @@ label chapter6:
     h "Wow, today sure is a good day to be evil!"
     show tiger sad at left with easeinleft
     t "WOW, YOU ARE LAME.{w} AND NOT EVEN IN A COOL WAY."
-    show coach at right with easinright
+    show coach at right with easeinright
     c "For once I agree with you, vile T.I.G.E.R. space alien."
     c "Only someone as scummy as Hitler would come back to life just to destroy America's pastime - Baseball"
     t "TRUCE?"
@@ -437,39 +437,48 @@ label chapter7:
 
 label chapter8:
     scene black with dissolve
+    show tiger robot at left
+    show wahoo fight at right
     show text "Chapter 8: Sweeping Detroit" with dissolve
     with Pause(2)
     hide text
+    hide wahoo fight with easeoutright
+    with Pause(2)
+    show tiger robot dead with hpunch
+    with Pause(2)
 
 label chapter9:
     scene black with dissolve
     show text "Epilogue!" with dissolve
     with Pause(2)
     hide text
-    show text "You win!" with moveinleft
+    show text "You win!" with easeinleft
     with Pause(2)
-    hide text with moveoutright
-    show text "Special Thanks to..." with moveinleft
+    hide text with easeoutright
+    show text "Special Thanks to..." with easeinleft
     with Pause(2)
-    hide text with moveoutright
-    show text "The Cleveland Indians" with moveinleft
+    hide text with easeoutright
+    show text "The Cleveland Indians" with easeinleft
     with Pause(2)
-    hide text with moveoutright
-    show text "Progressive Insurance" with moveinleft
+    hide text with easeoutright
+    show text "Progressive Insurance" with easeinleft
     with Pause(2)
-    hide text with moveoutright
-    show text "Tech Elevator" with moveinleft
+    hide text with easeoutright
+    show text "Tech Elevator" with easeinleft
     with Pause(2)
-    hide text with moveoutright
-    show text "/u/RiverRatRambler" with moveinleft
+    hide text with easeoutright
+    show text "/u/RiverRatRambler" with easeinleft
     with Pause(2)
-    hide text with moveoutright
-    show text "/u/Debadenedacro" with moveinleft
+    hide text with easeoutright
+    show text "/u/Debadenedacro" with easeinleft
     with Pause(2)
-    hide text with moveoutright
-    show text "/u/kgmoome" with moveinleft
+    hide text with easeoutright
+    show text "/u/kgmoome" with easeinleft
     with Pause(2)
-    hide text with moveoutright
+    hide text with easeoutright
+    show text "Grand Indians: The Directors Cut - High Quality" with easeinleft
+    with Pause(2)
+    hide text with easeoutright
     return
 
 # Pregame Splashscreen
