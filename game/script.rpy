@@ -396,13 +396,44 @@ label chapter6:
     show text "Chapter 6: Three Reich's You're Out!" with dissolve
     with Pause(2)
     hide text
+    show hitler with fade
+    h "Wow, today sure is a good day to be evil!"
+    show tiger sad at left with easeinleft
+    t "WOW, YOU ARE LAME.{w} AND NOT EVEN IN A COOL WAY."
+    show coach at right with easinright
+    c "For once I agree with you, vile T.I.G.E.R. space alien."
+    c "Only someone as scummy as Hitler would come back to life just to destroy America's pastime - Baseball"
+    t "TRUCE?"
+    c "TRUCE"
+    show coach mecha at right with hpunch
+    with Pause(1)
+    hide hitler with hpunch
+    t "TRUCE OVER"
+    c "Go back to space, you space alien!"
 
 label chapter7:
     scene black with dissolve
     show text "Chapter 7: Christmas in Cleveland" with dissolve
     with Pause(2)
     hide text
-    show coach
+    show coach with fade
+    c "I am thankful for chewing gum!"
+    hide coach with fade
+    show klubot with fade
+    k "I AM THANKFUL FOR BASEBALL!"
+    hide klubot with fade
+    show klubot with fade
+    k "I AM THANKFUL FOR BASEBALL!"
+    hide klubot with fade
+    show klubot glitch with fade
+    k "I AM THANKFUL FOR BASEBALL!"
+    hide klubot with fade
+    show flo with fade
+    f "I am thankful for affordable insuracnce!"
+    hide flo with fade
+    show tiger with fade
+    t "I AM THANKFUL FOR EVIL"
+    hide tiger with fade
 
 label chapter8:
     scene black with dissolve
