@@ -61,7 +61,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/tribe.ogg"
 
 
 ## Transitions #################################################################
@@ -149,7 +149,7 @@ define config.save_directory = "GrandIndians-1516926091"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "images/wahoo.png"
 
 
 ## Build configuration #########################################################
