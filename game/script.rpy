@@ -355,7 +355,7 @@ label chapter5:
     t "I HEARD THAT YOU PITCH FOR THE CLEVELAND INDIANS"
     show klubot sad at right
     k "Fishiness Levels = 9999\%"
-    k "{i}Lie mode activate!{i}"
+    k "{i}Lie mode activate!{/i}"
     k "{i}No{/i}"
     scene klubot head with fade
     k "I was born in a lab in 1986."
@@ -443,7 +443,7 @@ label chapter8:
     show text "Chapter 8: Sweeping Detroit" with dissolve
     with Pause(2)
     hide text
-    hide wahoo fight with easeoutright
+    hide wahoo fight with easeoutleft
     with Pause(2)
     show tiger robot dead with hpunch
     with Pause(2)
