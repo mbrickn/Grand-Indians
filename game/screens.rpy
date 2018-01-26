@@ -301,17 +301,15 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("PLAY BALL") action Start()
 
         else:
+        
+            textbutton _("SAVES BASES") action ShowMenu("save")
 
-            textbutton _("History") action ShowMenu("history")
+        textbutton _("LOAD BASES") action ShowMenu("load")
 
-            textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("BENCH JOCKEY") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -319,17 +317,17 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("UECKER SEATS") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("UMPIRE") action ShowMenu("about")
 
         if renpy.variant("pc"):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("UMPIRE") action ShowMenu("help")
 
             ## The quit button is banned on iOS and unnecessary on Android.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("STRIKE OUT") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -545,7 +543,7 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("GAME TICKET"), scroll="viewport"):
 
         style_prefix "about"
 
@@ -586,14 +584,14 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Save"))
+    use file_slots(_("SAVE BASES"))
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use file_slots(_("LOAD BASES"))
 
 
 screen file_slots(title):
@@ -715,7 +713,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("BENCH JOCKEY"), scroll="viewport"):
 
         vbox:
 
@@ -885,7 +883,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    use game_menu(_("HALL OF FAME"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
 
         style_prefix "history"
 
@@ -972,7 +970,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("UMPIRE!"), scroll="viewport"):
 
         style_prefix "help"
 
@@ -981,8 +979,8 @@ screen help():
 
             hbox:
 
-                textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
-                textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+                textbutton _("Keyball") action SetScreenVariable("device", "keyboard")
+                textbutton _("Mouseball") action SetScreenVariable("device", "mouse")
 
                 if GamepadExists():
                     textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
