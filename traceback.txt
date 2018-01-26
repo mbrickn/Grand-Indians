@@ -1,29 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 381, in script
-    k "{i}Fire!{/i}" with pause(1)
-  File "game/script.rpy", line 381, in <module>
-    k "{i}Fire!{/i}" with pause(1)
-NameError: name 'pause' is not defined
+  File "game/script.rpy", line 435, in script
+    show tiger with fade
+Exception: Image 'tiger' not found.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 381, in script
-    k "{i}Fire!{/i}" with pause(1)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 603, in execute
-    say_menu_with(self.with_, renpy.game.interface.set_transition)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/ast.py", line 466, in say_menu_with
-    what = renpy.python.py_eval(expression)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/python.py", line 1606, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/home/hackathon/Documents/renpy-6.99.10-sdk/renpy/python.py", line 1601, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 381, in <module>
-    k "{i}Fire!{/i}" with pause(1)
-NameError: name 'pause' is not defined
+  File "game/script.rpy", line 435, in script
+    show tiger with fade
+  File "/Users/mbrickn/Desktop/renpy-6.99.14-sdk/renpy/ast.py", line 1110, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Users/mbrickn/Desktop/renpy-6.99.14-sdk/renpy/ast.py", line 1082, in show_imspec
+    atl=atl)
+  File "/Users/mbrickn/Desktop/renpy-6.99.14-sdk/renpy/exports.py", line 656, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/Users/mbrickn/Desktop/renpy-6.99.14-sdk/renpy/display/image.py", line 303, in find_target
+    error("Image '%s' not found." % ' '.join(self.name))
+  File "/Users/mbrickn/Desktop/renpy-6.99.14-sdk/renpy/display/image.py", line 289, in error
+    raise Exception(msg)
+Exception: Image 'tiger' not found.
 
-Linux-4.4.9-300.fc23.x86_64-x86_64-with-fedora-23-Twenty_Three
-Ren'Py 6.99.10.1227
+Darwin-16.5.0-x86_64-i386-64bit
+Ren'Py 6.99.14.3135
 MechaWahoo 0.2

@@ -146,6 +146,7 @@ define k = Character("KLUB07", color = "#ff0000", what_font="fonts/league_orbitr
 define w = Character("Mecha Wahoo", color = "#ff0000", what_font="fonts/league_orbitron/Orbitron Medium.otf")
 define c = Character("Coach", color = "#ff0000")
 define p = Character("Player", color = "#ff0000")
+define h = Character("Hitler", color = "#ff0000")
 define f = Character("Flo", color = "#0004ae")
 define i = Character("Cleveland Indians", color = "#ff0000")
 define tt = Character("The Tribe", color = "#ff0000")
@@ -431,7 +432,7 @@ label chapter7:
     show flo with fade
     f "I am thankful for affordable insuracnce!"
     hide flo with fade
-    show tiger with fade
+    show tiger happy with fade
     t "I AM THANKFUL FOR EVIL"
     hide tiger with fade
 
